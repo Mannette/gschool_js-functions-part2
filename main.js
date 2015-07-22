@@ -23,7 +23,9 @@ function oldestPerson(people) {
   return oldest;
 }
 
-var test = {'Ben':26, 'Ethan':23, 'Darryl':62}
+var test = {'Ben':26, 'Ethan':23, 'Darryl':62};
+console.log(oldestPerson(test));
+
 
 function longestWord(str) {
   var word = "";
@@ -36,3 +38,19 @@ function longestWord(str) {
   }
   return word;
 }
+
+function factorial(x) {
+  //x = Math.floor(Math.random() * 4 - 0);
+  if (x === 0) {
+    return 1;
+  }
+  if (x < 0) {
+    return undefined;
+  }
+  for(var i = x; --i;) {
+    x *= i;
+  }
+  return x;
+}
+console.log(factorial(4));
+// should return 24
